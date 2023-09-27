@@ -13,14 +13,14 @@ function Update-GameJamPC
         try
         {
           $Headers = @{'Cache-Control'='no-store'}
-          Write-Host "Downloading $ConfigFile -> $TempConfigPath"
-          Invoke-WebRequest -Headers $Headers -Uri $ZipFilePath -OutFile $TempConfigPath
+          Write-Host "Downloading $ConfigFilePath -> $TempConfigPath"
+          Invoke-WebRequest -Headers $Headers -Uri $ConfigFilePath -OutFile $TempConfigPath
           $FileHash = (Get-FileHash $TempConfigPath -Algorithm SHA256).Hash
           Write-Host " > Downloaded, SHA256 = $FileHash"
         }
         catch
         {
-          Write-Host -ForegroundColor Red "Unable to download host repository ZIP file from $ConfigFile"
+          Write-Host -ForegroundColor Red "Unable to download host repository ZIP file from $ConfigFilePath"
           return
         }
         
