@@ -12,3 +12,9 @@ win10 developer pc auto-setup scripts
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force ; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072 ; (Invoke-WebRequest -UseBasicParsing -Method Get -Uri "https://raw.githubusercontent.com/karlgluck/gamejampc/main/Import-GameJamSetup.ps1" -Headers @{'Cache-Control'='no-store'}).Content | Invoke-Expression ; Import-GameJamSetup -ZipFilePath "https://github.com/karlgluck/gamejampc/archive/refs/heads/main.zip"
 ```
+
+5. Run the update function for the game jam
+
+```
+Update-GameJamPC "gamejam23.config"
+```
