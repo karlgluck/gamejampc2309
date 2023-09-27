@@ -14,7 +14,7 @@ function Import-GameJamSetup
         {
           $Headers = @{'Cache-Control'='no-store'}
           Write-Host "Downloading $ZipFilePath -> $TempZipPath"
-          Invoke-WebRequest -Headers $Headers -Uri $ZipFilePath -OutFile $TempZipPath
+          Invoke-WebRequest -UseBasicParsing -Headers $Headers -Uri $ZipFilePath -OutFile $TempZipPath
           $ZipFileHash = (Get-FileHash $TempZipPath -Algorithm SHA256).Hash
           Write-Host " > Downloaded, SHA256 = $ZipFileHash"
         }
