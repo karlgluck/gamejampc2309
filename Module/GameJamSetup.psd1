@@ -1,6 +1,6 @@
 @{
-    GUID = 'df4749f7-3d33-4d6e-9d5a-a06e2d0f373a'
+    GUID = '96d2dd70-503c-493f-a0d4-53f6f4cf4bf9'
     Author = 'Karl Gluck'
-    ModuleToProcess = 'SwissChocolateyLab.psm1'
+    ModuleToProcess = 'GameJamSetup.psm1'
     ModuleVersion = '1.0.0.0'
 }
