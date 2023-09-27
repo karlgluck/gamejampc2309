@@ -16,5 +16,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force ; [System.Net.ServicePointManag
 5. Run the update function for the game jam
 
 ```
-Update-GameJamPC "gamejam23.config"
+Update-GameJamPC "https://github.com/karlgluck/gamejampc/raw/main/gamejam23.config"
 ```
