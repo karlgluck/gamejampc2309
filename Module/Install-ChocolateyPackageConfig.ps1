@@ -43,6 +43,8 @@ function Install-ChocolateyPackageConfig
     Finished=(($packagesNotInstalled.Count -eq 0) -and (-not $restartRequired))
     ExitCode=$chocoExitCode
     RestartRequired=$restartRequired
+    PackagesRequiredByConfig=$packagesRequiredByConfig
+    PackagesAlreadyInstalled=$packagesAlreadyInstalled
     PackagesNotInstalled=$packagesNotInstalled
     }
 }
