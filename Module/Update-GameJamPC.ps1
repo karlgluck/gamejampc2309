@@ -28,6 +28,6 @@ function Update-GameJamPC
         $ConfigFilePath = $TempConfigPath
   }
 
-  # Install the config file
+  Install-Chocolatey
   Install-ChocolateyPackageConfig -Path $ConfigFilePath
 }
