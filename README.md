@@ -29,7 +29,7 @@ git config --global user.email "MY_NAME@example.com"
 7. Check out project
 
 ```
-mkdir -p D:\GameJam
-cd D:\GameJam
+if (-not (Test-Path "D:\GameJam")) { New-Item "D:\GameJam" -ItemType Directory | Out-Null }
+Set-Location "D:\GameJam"
 git clone https://github.com/Sorjak/gamejam23
 ```
