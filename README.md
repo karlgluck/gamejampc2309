@@ -51,3 +51,20 @@ Set-Location "D:\GameJam\gamejam23"
 git pull
 Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
 ```
+
+
+## Switching to P4
+
+```
+p4 set P4PORT="IP"
+p4 set P4CLIENT="WORKSPACE_NAME"
+p4 set P4USER="Temecula"
+p4 client "WORKSPACE_NAME"
+cd D:\sync
+p4 sync
+```
+
+How to commit:
+```
+p4 submit
+```
