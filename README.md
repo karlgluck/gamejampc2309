@@ -33,3 +33,9 @@ if (-not (Test-Path "D:\GameJam")) { New-Item "D:\GameJam" -ItemType Directory |
 Set-Location "D:\GameJam"
 git clone https://github.com/Sorjak/gamejam23
 ```
+
+8. Open the project
+
+```
+Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
+```
