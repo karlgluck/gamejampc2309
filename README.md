@@ -18,3 +18,18 @@ Set-ExecutionPolicy Bypass -Scope Process -Force ; [System.Net.ServicePointManag
 ```
 Update-GameJamPC "https://github.com/karlgluck/gamejampc/raw/main/gamejam23.config"
 ```
+
+6. Set up Git
+
+```
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@example.com"
+```
+
+7. Check out project
+
+```
+mkdir -p D:\GameJam
+cd D:\GameJam
+git clone https://github.com/Sorjak/gamejam23
+```
