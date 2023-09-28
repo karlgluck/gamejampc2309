@@ -45,6 +45,7 @@ Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
 To update and open the project, close Unreal then:
 
 ```
+Set-ExecutionPolicy Bypass -Scope Process -Force ; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
 Update-GameJamPC "https://github.com/karlgluck/gamejampc/raw/main/gamejam23.config"
 Set-Location "D:\GameJam\gamejam23"
 git pull
