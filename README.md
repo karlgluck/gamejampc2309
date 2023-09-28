@@ -39,3 +39,14 @@ git clone https://github.com/Sorjak/gamejam23
 ```
 Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
 ```
+
+# Once you're set up
+
+To update and open the project, close Unreal then:
+
+```
+Update-GameJamPC "https://github.com/karlgluck/gamejampc/raw/main/gamejam23.config"
+Set-Location "D:\GameJam\gamejam23"
+git pull
+Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
+```
