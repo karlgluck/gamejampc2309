@@ -69,6 +69,15 @@ p4 sync
 Start-Process "$BasePath\UEProject\GameJam23.uproject"
 ```
 
+Future syncs:
+```
+$BasePath = "D:\p4"
+if (-not (Test-Path $BasePath)) { New-Item $BasePath -ItemType Directory | Out-Null }
+Set-Location $BasePath
+p4 sync
+Start-Process "$BasePath\UEProject\GameJam23.uproject"
+```
+
 How to commit:
 ```
 p4 submit
