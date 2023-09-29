@@ -56,11 +56,13 @@ Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
 ## Switching to P4
 
 ```
+$BasePath = "D:\p4"
+if (-not (Test-Path $BasePath)) { New-Item $BasePath -ItemType Directory | Out-Null }
+Set-Location $BasePath
 p4 set P4PORT="IP"
 p4 set P4CLIENT="WORKSPACE_NAME"
 p4 set P4USER="Temecula"
 p4 client "WORKSPACE_NAME"
-cd D:\sync
 p4 sync
 ```
 
