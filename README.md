@@ -66,7 +66,7 @@ p4 set P4CHARSET="utf8"
 p4 set P4IGNORE=".p4ignore"
 p4 client "WORKSPACE_NAME"
 p4 sync
-Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
+Start-Process "$BasePath\UEProject\GameJam23.uproject"
 ```
 
 How to commit:
