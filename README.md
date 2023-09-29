@@ -64,6 +64,7 @@ p4 set P4CLIENT="WORKSPACE_NAME"
 p4 set P4USER="Temecula"
 p4 client "WORKSPACE_NAME"
 p4 sync
+Start-Process "D:\GameJam\gamejam23\GameJam23\GameJam23.uproject"
 ```
 
 How to commit:
